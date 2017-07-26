@@ -1,0 +1,24 @@
+
+// Status Bar
+// -------------------
+
+// Located at the bottom.
+// Displays information about the current editor.
+// Overrides: atom/status-bar
+
+.status-bar {
+  font-size: @tab-font-size;
+  color: @text-color;
+  background-color: @tree-view-background-color;
+  .inline-block {
+    margin: 0;
+  }
+
+  .status-bar-left > * .inline-block, .status-bar-right > * .inline-block {
+    margin: 0 5px !important;
+  }
+
+  .status-bar-left > .inline-block, .status-bar-right > .inline-block {
+    margin-right: 10px !important;
+  }
+}

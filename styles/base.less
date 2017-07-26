@@ -1,0 +1,52 @@
+
+// Base
+// -------------------
+
+// Used for global styles
+// Or to override certain Atom core styles
+
+// -------------------
+
+
+body {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.atom-dock-toggle-button, .atom-dock-toggle-button-inner {
+  border: 0 !important;
+  &.bottom {
+    margin-bottom: -1px;
+  }
+}
+
+atom-text-editor .bracket-matcher .region {
+  border-bottom: 1px solid @text-color-info;
+  z-index: 100;
+}
+
+.overlay.from-top {
+  top: 5rem;
+}
+
+atom-panel.modal {
+  box-shadow: 0 2px 40px 10px rgba(0, 0, 0, 0.5);
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: fade(@base-background-color, 65%)
+  }
+}

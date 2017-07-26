@@ -1,0 +1,19 @@
+{
+  "name": "blossom-ui",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Clean, dark, high-contrast theme based off One Dark ui, to be used with blossom-ui.",
+  "keywords": [
+    "blossom",
+    "syntax",
+    "theme",
+    "dark",
+    "clean",
+    "minimal"
+  ],
+  "repository": "https://github.com/aotik/blossom-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
