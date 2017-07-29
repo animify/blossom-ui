@@ -6,12 +6,11 @@
 
 
 atom-text-editor[mini] {
-  padding: @component-padding/1.4 @component-padding;
+  padding: @component-padding/1.6 @component-padding;
   color: @text-color;
   border-radius: @component-border-radius;
   background-color: @input-background-color;
   max-height: none;
-
   &.is-focused {
     background-color: darken(@input-background-color, 1%);
   }
@@ -27,6 +26,6 @@ atom-text-editor[mini] {
 atom-panel.modal {
   atom-text-editor[mini] {
     padding: @component-padding / .6;
-    font-size: 18px;
+    font-size: 14px;
   }
 }

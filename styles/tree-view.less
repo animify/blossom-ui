@@ -10,7 +10,6 @@
 }
 
 .tree-view {
-  color: @text-color;
   background-color: @tree-view-background-color;
   &::-webkit-scrollbar {
     display: none;
@@ -28,6 +27,16 @@
 
   .list-item.file.entry {
     transition: .14s ease-in;
+    color: @text-color;
+    &.status-modified {
+      color: @text-color-warning;
+    }
+    &.status-added {
+      color: @text-color-success;
+    }
+    &.status-ignored {
+      color: @text-color-subtle;
+    }
     &:after {
       .octicon-font();
       content: "\f052";
@@ -38,7 +47,7 @@
       left: -12.5px;
       width: 6px;
       margin-right: -8px;
-      color: lighten(@base-background-color, 10%);
+      color: lighten(@base-gray, 15%);
     }
     &.selected:after {
       color: lighten(@base-background-color, 20%);

@@ -13,7 +13,7 @@
 
 // Text Colors
 @text-color:           #868f9e;
-@text-color-subtle:    #2D3A50;
+@text-color-subtle:    #46556F;
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
@@ -33,14 +33,16 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: darken(#19212e, 1.5%);
+@base-background-color: darken(#19212e, 2.5%);
+@base-tab-c: #212939;
+@base-gray: #212939;
 @base-border-color:     darken(@base-background-color, 1%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: darken(@base-background-color, 1%);
+@input-background-color: lighten(@base-background-color, 6%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
@@ -63,7 +65,7 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: @tab-bar-background-color;
+@tab-background-color-active: #19212e;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
@@ -77,8 +79,8 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@tab-font-size: 10px;
-@font-size: 12px;
+@tab-font-size: 11px;
+@font-size: 13px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
@@ -88,7 +90,7 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 30px;
+@tab-height: 36px;
 
 // Misc
 @component-border-radius: 2px;

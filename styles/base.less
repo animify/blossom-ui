@@ -15,7 +15,7 @@ body {
 }
 
 atom-pane {
-  border-right: 1px solid @base-border-color;
+  background-color: @base-background-color;
   &:last-child {
     border-right: none;
   }
@@ -28,7 +28,11 @@ atom-pane {
   }
 }
 
-atom-text-editor .bracket-matcher .region {
+.atom-dock-resize-handle.atom-dock-resize-handle-resizable.left, .atom-dock-resize-handle.atom-dock-resize-handle-resizable.right {
+    background-color: lighten(@base-background-color, 5%)
+}
+
+atom-text-editor.editor .bracket-matcher .region {
   border-bottom: 1px solid @text-color-info;
   z-index: 100;
 }
@@ -39,7 +43,8 @@ atom-text-editor .bracket-matcher .region {
 
 atom-panel.modal {
   box-shadow: 0 2px 40px 10px rgba(0, 0, 0, 0.5);
-  &:after {
+  background-color: #313a4a;
+  &::after {
     content: "";
     position: fixed;
     top: 0;
@@ -47,6 +52,6 @@ atom-panel.modal {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: fade(@base-background-color, 65%)
+    background-color: rgba(47, 55, 70, 0.3);
   }
 }
