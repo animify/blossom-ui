@@ -11,7 +11,7 @@
     "clean",
     "minimal"
   ],
-  "repository": "https://github.com/aotik/blossom-ui",
+  "repository": "https://github.com/animify/blossom-ui",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
