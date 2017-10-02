@@ -1,11 +1,35 @@
 .settings-view {
   .package-card {
     background-color: lighten(@base-background-color, 4%);
-    border: 0;
+    padding: 1.3rem 1.8rem;
+    transition: background-color 100ms ease;
+    border-color: lighten(@base-background-color, 10%);
+    margin: 20px 0;
+    .package-description {
+      margin: 5px 0;
+      display: block;
+      color: @text-color-light;
+    }
     &:hover {
-      background-color: lighten(@base-background-color, 6%);
+      border-color: lighten(@base-background-color, 10%);
+      background-color: lighten(@base-background-color, 3%);
     }
   }
+
+  .packages .theme-description {
+    font-weight: 400;
+    display: block;
+    margin: 5px 0;
+  }
+
+  .section .section-heading {
+    font-weight:  400;
+    letter-spacing: -.02em;
+    span {
+      font-weight: 600;
+    }
+  }
+
   .config-menu {
     background-color: #19212e;
     border-right: 0;

@@ -9,7 +9,7 @@ atom-text-editor {
 }
 
 atom-text-editor[mini] {
-  padding: @component-padding/1.6 @component-padding;
+  padding: @component-padding/4 @component-padding;
   color: @text-color;
   border-radius: @component-border-radius;
   background-color: @input-background-color;
@@ -21,7 +21,7 @@ atom-text-editor[mini] {
     display: none;
   }
   .placeholder-text {
-    color: @text-color-subtle;
+    color: @text-color-light;
   }
   .selection .region {
     background-color: @background-color-selected;
@@ -30,7 +30,77 @@ atom-text-editor[mini] {
 
 atom-panel.modal {
   atom-text-editor[mini] {
-    padding: @component-padding / .6;
-    font-size: 14px;
+    padding: @component-padding/.6;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: @font-family
+  }
+
+  & > * {
+    position: relative;
+  }
+
+  .select-list ol.list-group,
+  &.select-list ol.list-group {
+    border: 1px solid @base-border-color;
+    background-color: lighten(@app-background-color, 2%);
+
+    &:empty {
+      border: none;
+      margin-top: 0;
+    }
+
+    li {
+      padding: @component-padding @component-padding;
+      line-height: 1.4em;
+      border-bottom: 1px solid @app-background-color;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .icon.status {
+        float: right;
+        margin-left: 10px;
+        &:before {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      &.selected {
+        background-color:  @background-color-info;
+        .status.icon {
+          color: @text-color-selected;
+        }
+      }
+    }
+  }
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: @app-background-color;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px -2px hsla(0,0%,0%,.4);
+  }
+
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: @app-background-color;
+    opacity: .4;
+    backface-visibility: hidden;
   }
 }
