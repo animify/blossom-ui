@@ -5,6 +5,12 @@
 // Mini Editors are the "text inputs" used in find+replace or in the settings.
 
 
+atom-text-editor {
+  .vertical-scrollbar {
+    overflow-y: hidden !important;
+  }
+}
+
 atom-text-editor[mini] {
   padding: @component-padding/1.6 @component-padding;
   color: @text-color;
@@ -14,7 +20,9 @@ atom-text-editor[mini] {
   &.is-focused {
     background-color: darken(@input-background-color, 1%);
   }
-
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .placeholder-text {
     color: @text-color-subtle;
   }

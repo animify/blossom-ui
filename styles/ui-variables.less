@@ -12,12 +12,12 @@
 
 
 // Text Colors
-@text-color:           #868f9e;
+@text-color:           #C1CDDA;
 @text-color-subtle:    #46556F;
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
-@text-color-info:    #35A5E3;
+@text-color-info:    #7CBCFF;
 @text-color-success: #60bf9d;
 @text-color-warning: #f0c674;
 @text-color-error:   #df5d5d;
@@ -29,11 +29,11 @@
 @background-color-error:   hsl(0,    70%, 50%);
 
 @background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-selected:  lighten(#7CBCFF, 0%);
+@app-background-color:       darken(@base-background-color, 0%);
 
 // Base colors
-@base-background-color: darken(#19212e, 2.5%);
+@base-background-color: darken(#253244, 5%);
 @base-tab-c: #212939;
 @base-gray: #212939;
 @base-border-color:     darken(@base-background-color, 1%);
@@ -62,10 +62,10 @@
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-bar-background-color:    @base-background-color;
+@tab-bar-background-color:    lighten(@base-background-color, 5%);
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: #19212e;
+@tab-background-color-active: @base-background-color;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
@@ -90,8 +90,8 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 36px;
+@tab-height: 38px;
 
 // Misc
-@component-border-radius: 2px;
+@component-border-radius: 4px;
 @font-family: 'BlinkMacSystemFont', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
