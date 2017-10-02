@@ -12,12 +12,21 @@
 
 .tool-panel {
   padding: @component-padding/2;
+  
   &.footer {
     padding: 0;
   }
+
   .header {
     padding: @component-padding/4 @component-padding @component-padding*1.5 @component-padding ;
   }
+
+  &.tree-view {
+    .header {
+      padding: 0;
+    }
+  }
+
 }
 
 .inset-panel {

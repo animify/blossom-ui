@@ -4,7 +4,7 @@
     padding: @component-padding*1.5 @component-padding*2;
     transition: background-color 100ms ease;
     border-color: @base-border-color;
-    margin: 20px 0;
+    margin: 10px 0;
     .package-description {
       margin: 5px 0;
       display: block;
@@ -30,6 +30,20 @@
     }
   }
 
+  .section .section-container {
+    line-height: 1.8em;
+    color: @text-color-light;
+  }
+
+  .control-group + .control-group {
+    margin-top: 2em !important;
+  }
+
+  .setting-description {
+    font-weight:  400;
+    margin: 5px 0;
+  }
+
   .config-menu {
     background-color: #19212e;
     border-right: 0;
@@ -37,6 +51,13 @@
     padding: 0;
     li  a {
       padding: 1rem 2rem;
+      color: @text-color-light;
+      &.icon:before {
+        font-size: @input-font-size;
+        position: relative;
+        top: 1px;
+        margin-right: @component-padding/1.5;
+      }
     }
     li:hover a {
       background-color: transparent !important;
