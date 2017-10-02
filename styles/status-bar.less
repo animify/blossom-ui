@@ -6,14 +6,28 @@
 // Displays information about the current editor.
 // Overrides: atom/status-bar
 
+status-bar {
+  height: 30px;
+}
+
 .status-bar {
   font-size: @tab-font-size;
   color: #fff;
   background-color: @background-color-highlight;
+  border-top: 1px solid @base-border-color;
+  &-left, &-right {
+    line-height: 2.4em;
+  }
   .inline-block {
     margin: 0;
     color: @text-color;
     font-size: 10px;
+  }
+
+  .icon {
+    &::before {
+      margin-right: .5em;
+    }
   }
 
   .status-bar-left > * .inline-block, .status-bar-right > * .inline-block {
