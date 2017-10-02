@@ -8,17 +8,19 @@
 
 .status-bar {
   font-size: @tab-font-size;
-  color: @text-color;
-  background-color: @tree-view-background-color;
+  color: #fff;
+  background-color: @background-color-highlight;
   .inline-block {
     margin: 0;
+    color: @text-color;
+    font-size: 10px;
   }
 
   .status-bar-left > * .inline-block, .status-bar-right > * .inline-block {
-    margin: 0 5px !important;
+    padding: 0 7px !important;
   }
 
   .status-bar-left > .inline-block, .status-bar-right > .inline-block {
-    margin-right: 10px !important;
+    padding: 0 7px !important;
   }
 }
