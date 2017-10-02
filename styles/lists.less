@@ -50,11 +50,14 @@ li.list-nested-item.selected > .list-item {
 // Select List -------------------
 .select-list {
   li {
+    color: @text-color-light;
     padding: @component-padding/2 @component-padding;
   }
+
   .status {
     float: right;
   }
+
   & ol.list-group {
       &::-webkit-scrollbar {
         display: none;
@@ -68,7 +71,8 @@ li.list-nested-item.selected > .list-item {
   @popover-list-padding: @component-padding;
   padding: @popover-list-padding;
   border-radius: @component-border-radius;
-  background-color: @overlay-background-color;
+  background-color: @base-background-color;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.3);
   .list-group {
     margin-top: @popover-list-padding;
     li {
