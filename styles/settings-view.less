@@ -1,20 +1,23 @@
 .settings-view {
   .package-card {
-    background-color: lighten(@base-background-color, 2%);
+    background-color: lighten(@base-background-color, 4%);
     border: 0;
     &:hover {
-      background-color: lighten(@base-background-color, 3%);
+      background-color: lighten(@base-background-color, 6%);
     }
   }
   .config-menu {
     background-color: #19212e;
     border-right: 0;
-    border-left: 0;
+    border-left: 1px solid @base-border-color;
+    li  a {
+      padding: 1rem 2rem;
+    }
     li:hover a {
       background-color: transparent !important;
     }
     li.active > a {
-      background-color: lighten(@base-background-color, 2%) !important;
+      background-color: @base-background-color !important;
     }
 
 
