@@ -7,11 +7,14 @@
 .panel-heading {
   border-bottom: 1px solid @panel-heading-border-color;
   background-color: @panel-heading-background-color;
-  padding: @component-padding;
+  padding: @component-padding/2;
 }
 
 .tool-panel {
-  padding: @component-padding;
+  padding: @component-padding/2;
+  .header {
+    padding: @component-padding/4 @component-padding @component-padding*1.5 @component-padding ;
+  }
 }
 
 .inset-panel {

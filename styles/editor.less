@@ -29,11 +29,21 @@ atom-text-editor[mini] {
 }
 
 atom-panel.modal {
+  padding: 0 @component-padding*1.5 @component-padding*1.5 @component-padding*1.5;
+  border-radius: 4px;
   atom-text-editor[mini] {
-    padding: @component-padding/.6;
-    font-size: 20px;
+    padding: @component-padding/.4 @component-padding/4;
+    font-size: 24px;
     background-color: transparent;
-    font-family: @font-family
+    line-height: 34px;
+    font-family: @font-family;
+    & + span {
+      text-align: center;
+      display: block;
+      color: @text-color-subtle;
+      font-size: 1.2rem;
+      padding: @component-padding;
+    }
   }
 
   & > * {
@@ -42,8 +52,9 @@ atom-panel.modal {
 
   .select-list ol.list-group,
   &.select-list ol.list-group {
-    border: 1px solid @base-border-color;
+    border: 1px solid @base-border-color-light;
     background-color: lighten(@app-background-color, 2%);
+    border-radius: 4px;
 
     &:empty {
       border: none;
@@ -52,9 +63,14 @@ atom-panel.modal {
 
     li {
       padding: @component-padding @component-padding;
-      line-height: 1.4em;
+      line-height: 1.5em;
       border-bottom: 1px solid @app-background-color;
 
+      .primary-line {
+        position: relative;
+        top: -1px;
+      }
+      
       &:last-of-type {
         border-bottom: none;
       }
